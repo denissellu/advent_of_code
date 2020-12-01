@@ -1,4 +1,6 @@
-require './report.rb'
+# frozen_string_literal: true
+
+require './report'
 
 RSpec.describe 'Daily Report' do
   let(:file_path) { 'spec/fixtures/files/input.txt' }
@@ -7,4 +9,3 @@ RSpec.describe 'Daily Report' do
     expect(get_2020_expense(file_path)).to eq 514579
   end
 end
-
